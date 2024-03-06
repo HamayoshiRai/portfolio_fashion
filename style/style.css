@@ -19,13 +19,31 @@ body{
   text-align: center;
   border-bottom: 1px solid #1e1b19;
   border-top: 1px solid #1e1b19;
-  padding: 24px 0px;
 }
 
 .title_border {
   border-bottom: 0px solid #1e1b19;
   border-top: 4px solid #1e1b19;
   padding: 2px 0px 0px 0px;
+  margin-top: 50px;
+}
+
+.title_logo {
+  margin-bottom: 0;
+}
+
+.sb_title {
+  font-size: 15px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-align: center;
+  transition-duration: 0ms;
+  width: auto;
+  max-width: 100%;
+  margin-top: 0;
+  justify-content: center;
 }
 
 .nav {
@@ -45,5 +63,134 @@ body{
   margin-top: 3px;
 }
 
-/* main */
+.Separator {
+  background: #1e1b19;
+  flex: none;
+  height: 16px;
+  transition-duration: 0ms;
+  width: 1px;
+  max-width: 100%;
+}
 
+.nav_link {
+  color: #1e1b19;
+  font-weight: bold;
+  font-size: 14px;
+  height: auto;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.asterisk_STORE {
+  background: #1e1b19;
+  border-radius: 2px;
+  bottom: auto;
+  flex: none;
+  height: 4px;
+  left: auto;
+  margin: 0;
+  position: absolute;
+  right: 757px;
+  top: 335px;
+  width: 4px;
+  max-width: 100%;
+}
+
+.asterisk_CONTACT {
+  background: #1e1b19;
+  border-radius: 2px;
+  bottom: auto;
+  flex: none;
+  height: 4px;
+  left: auto;
+  margin: 0;
+  position: absolute;
+  right: 650px;
+  top: 335px;
+  width: 4px;
+  max-width: 100%;
+}
+
+.jpen {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+}
+
+.slash {
+  background: #1e1b19;
+  border-radius: 0;
+  flex: none;
+  height: 10px;
+  margin: 0px 1px 0px 0px;
+  transform: rotate(30deg);
+  width: 1px;
+  max-width: calc(100% - 1px);
+}
+
+.jp {
+  color: #b51c03;
+  font-size: 14px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.en {
+  color: #1e1b19;
+  font-size: 14px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.bg_design {
+  flex: none;
+  height: auto;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -3;
+  max-width: 100%;
+}
+
+/* main */
+.top_about {
+  color: #1e1b19;
+  font-family: "Zen Antique", serif;
+  font-style: normal;
+  font-size: 85px;
+  font-weight: 400;
+  height: auto;
+  line-height: 1;
+  margin: 0px 0px 16px 0px;
+  text-align: left;
+  max-width: 100%;
+  justify-content: flex-start;
+}
