@@ -63,6 +63,10 @@ body{
   margin-top: 3px;
 }
 
+li {
+  list-style: none;
+}
+
 .Separator {
   background: #1e1b19;
   flex: none;
@@ -181,6 +185,37 @@ body{
 }
 
 /* main */
+
+.section_top {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #1e1b19;
+  border-left: 10px solid #1e1b19;
+  border-right: 10px solid #1e1b19;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: auto;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+  width: 80%;
+  max-width: 100%;
+}
+
+.content_box {
+  padding: 0px 40px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
 .top_about {
   color: #1e1b19;
   font-family: "Zen Antique", serif;
@@ -193,4 +228,141 @@ body{
   text-align: left;
   max-width: 100%;
   justify-content: flex-start;
+}
+
+#about {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: 5;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: auto;
+  justify-content: flex-start;
+  padding: 40px 0px 0px 0px;
+  width: auto;
+  max-width: 100%;
+}
+
+.first_text {
+  color: #1e1b19;
+  flex: none;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  text-align: left;
+  transition-duration: 0ms;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+.second_text {
+  color: #1e1b19;
+  flex: none;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0px 0px 24px 0px;
+  text-align: right;
+  transition-duration: 0ms;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-end;
+}
+
+.content_text {
+  color: #1e1b19;
+  flex: none;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0;
+  text-align: justify;
+  transition-duration: 0ms;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.view {
+  align-items: flex-end;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: center;
+  margin: 32px 0px 56px 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.view_link {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.view_line {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  justify-content: center;
+  padding: 0;
+}
+
+.view_line_top {
+  background: #1e1b19;
+  flex: none;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1, 1);
+  transform-origin: center left;
+  transition-duration: 0ms;
+  width: 40px;
+  max-width: 100%;
+}
+
+.view_line_under {
+  background: #1e1b19;
+  flex: none;
+  height: 1px;
+  transform: scale(0, 1);
+  transform-origin: center left;
+  transition-duration: 500ms;
+  width: 40px;
+  max-width: 100%;
+}
+
+.view_text {
+  color: #333;
+  font-family: "Zen Antique", serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
 }
