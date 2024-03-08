@@ -9,7 +9,6 @@ body{
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100%;
-  justify-content: flex-start;
   padding: 0;
   width: 100%;
   max-width: 100%;
@@ -51,8 +50,6 @@ body{
   align-content: center;
   align-items: center;
   border-bottom: 1px solid #1e1b19;
-  border-left: 0px solid #1e1b19;
-  border-right: 0px solid #1e1b19;
   border-top: 1px solid #1e1b19;
   flex: none;
   flex-direction: row;
@@ -93,10 +90,8 @@ li {
 .asterisk_STORE {
   background: #1e1b19;
   border-radius: 2px;
-  bottom: auto;
   flex: none;
   height: 4px;
-  left: auto;
   margin: 0;
   position: absolute;
   right: 757px;
@@ -108,7 +103,6 @@ li {
 .asterisk_CONTACT {
   background: #1e1b19;
   border-radius: 2px;
-  bottom: auto;
   flex: none;
   height: 4px;
   left: auto;
@@ -124,8 +118,6 @@ li {
   display: flex;
   align-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
   gap: 8px;
   justify-content: center;
   margin: 0px 0px 0px 20px;
@@ -135,7 +127,6 @@ li {
 .slash {
   background: #1e1b19;
   border-radius: 0;
-  flex: none;
   height: 10px;
   margin: 0px 1px 0px 0px;
   transform: rotate(30deg);
@@ -147,7 +138,6 @@ li {
   color: #b51c03;
   font-size: 14px;
   font-weight: 700;
-  height: auto;
   letter-spacing: 0.05em;
   line-height: 1;
   margin: 0;
@@ -161,7 +151,6 @@ li {
   color: #1e1b19;
   font-size: 14px;
   font-weight: 700;
-  height: auto;
   letter-spacing: 0.05em;
   line-height: 1;
   margin: 0;
@@ -173,7 +162,6 @@ li {
 
 .bg_design {
   flex: none;
-  height: auto;
   left: 0;
   margin: 0;
   opacity: 1;
@@ -186,33 +174,22 @@ li {
 
 /* main */
 
-.section_top {
+.main_top {
   display: flex;
-  align-content: flex-start;
-  align-items: flex-start;
-  border-bottom: 1px solid #1e1b19;
-  border-left: 10px solid #1e1b19;
-  border-right: 10px solid #1e1b19;
-  flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
   gap: 40px;
-  height: auto;
-  justify-content: flex-start;
   padding-bottom: 40px;
   width: 80%;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .content_box {
   padding: 0px 40px;
   width: 100%;
-  height: auto;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  justify-content: flex-start;
   max-width: 100%;
 }
 
@@ -222,23 +199,18 @@ li {
   font-style: normal;
   font-size: 85px;
   font-weight: 400;
-  height: auto;
   line-height: 1;
   margin: 0px 0px 16px 0px;
   text-align: left;
   max-width: 100%;
-  justify-content: flex-start;
 }
 
 #about {
-  align-content: flex-start;
-  align-items: flex-start;
   flex: 5;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 0px;
   height: auto;
-  justify-content: flex-start;
   padding: 40px 0px 0px 0px;
   width: auto;
   max-width: 100%;
@@ -258,7 +230,6 @@ li {
   transition-duration: 0ms;
   width: 100%;
   max-width: 100%;
-  justify-content: flex-start;
 }
 
 .second_text {
@@ -298,11 +269,10 @@ li {
 }
 
 .view {
+  display: flex;
   align-items: flex-end;
   flex: none;
   flex-direction: column;
-  flex-wrap: nowrap;
-  height: auto;
   justify-content: center;
   margin: 32px 0px 56px 0px;
   width: 100%;
@@ -310,15 +280,17 @@ li {
 }
 
 .view_link {
+  display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
-  justify-content: flex-start;
   padding: 0;
 }
 
 .view_line {
+  background: #1e1b19;
+  display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -365,4 +337,72 @@ li {
   width: auto;
   max-width: 100%;
   justify-content: center;
+}
+
+.store_content {
+  display: flex;
+  align-items: center;
+  flex: none;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.store_img {
+  flex: none;
+  width: 90%;
+  max-width: 90%;
+}
+
+.collection_top {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: 11;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 30px 0px 0px 0px;
+  width: auto;
+  max-width: 100%;
+}
+
+.collection_left {
+  align-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 0px solid #1e1b19;
+  border-left: 1px solid #1e1b19;
+  border-right: 0px solid #1e1b19;
+  border-top: 0px solid #1e1b19;
+  flex: none;
+  flex-direction: column;
+  padding: 0px 0px 0px 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.collection_title {
+  font-size: 60px;
+  font-family: "Zen Antique", serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.collection_box {
+  
+}
+
+.collection_content {
+  display: flex;
+  gap: 8px;
+  margin: 0px 0px 40px 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.fashion_img {
+
 }
