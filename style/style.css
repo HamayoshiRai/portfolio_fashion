@@ -388,13 +388,14 @@ li {
   font-family: "Zen Antique", serif;
   font-weight: 500;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .collection_box {
   
 }
 
-.collection_content {
+.collection_under {
   display: flex;
   gap: 8px;
   margin: 0px 0px 40px 0px;
@@ -404,5 +405,23 @@ li {
 }
 
 .fashion_img {
+  flex: none;
+  transition-delay: 800ms;
+  transition-duration: 0ms;
+  width: 220px;
+  height: 300px;
+}
 
+.detail_text {
+  color: #1e1b19;
+  font-family: "Zen Antique", serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 220px;
+}
+
+.detail_text p a {
+  color: #1e1b19;
 }
