@@ -414,7 +414,6 @@ li {
 
 #masterpiece {
   gap: 40px;
-  padding-bottom: 40px;
   width: 1360px;
   max-width: 100%;
   margin: 0 auto;
@@ -454,6 +453,7 @@ li {
 }
 
 .masterpiece_box {
+  position: relative;
   display: grid; 
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr 1fr; 
@@ -470,6 +470,22 @@ li {
     "masterpiece_img6_link masterpiece_img7_link masterpiece_img7_link"
     "masterpiece_img6_link masterpiece_img7_link masterpiece_img7_link"
   ; 
+}
+
+.masterpiece_wrapper {
+  width: 100%;
+}
+
+.before {
+  z-index: 0;
+}
+
+.after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  margin: 0;
+  top: 0;
 }
 
 .masterpiece_img1_link { 
@@ -481,53 +497,31 @@ li {
 }
 
 .masterpiece_img3_link { 
-  grid-area: masterpiece_img3_link; 
+  grid-area: masterpiece_img3_link;
 }
 
 .masterpiece_img4_link { 
   grid-area: masterpiece_img4_link;
-  position: relative;
-  top: -26%;
+  position: absolute;
+  bottom: 13%;
 }
 
 .masterpiece_img5_link { 
   grid-area: masterpiece_img5_link;
-  position: relative;
-  top: -3.5%;
+  position: absolute;
+  bottom: 7.9%;
 }
 
 .masterpiece_img6_link { 
   grid-area: masterpiece_img6_link;
-  position: relative;
-  top: -21%;
+  position: absolute;
+  bottom: 16%;
 }
 
 .masterpiece_img7_link { 
   grid-area: masterpiece_img7_link;
-  position: relative;
-  top: -40.5%;
-}
-
-.masterpiece_box_red {
-  position: relative;
-  bottom: 1018px;
-  z-index: -1;
-  display: grid; 
-  grid-auto-flow: dense;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 8px; 
-  grid-template-areas: 
-    "masterpiece_img1_link masterpiece_img2_link masterpiece_img3_link"
-    "masterpiece_img1_link masterpiece_img2_link masterpiece_img3_link"
-    "masterpiece_img1_link masterpiece_img2_link masterpiece_img5_link"
-    "masterpiece_img1_link masterpiece_img2_link masterpiece_img5_link"
-    "masterpiece_img1_link masterpiece_img4_link masterpiece_img5_link"
-    "masterpiece_img1_link masterpiece_img4_link masterpiece_img5_link"
-    "masterpiece_img6_link masterpiece_img4_link masterpiece_img5_link"
-    "masterpiece_img6_link masterpiece_img7_link masterpiece_img7_link"
-    "masterpiece_img6_link masterpiece_img7_link masterpiece_img7_link"
-  ; 
+  position: absolute;
+  bottom: 24.5%;
 }
 
 .img1_red {
@@ -544,34 +538,96 @@ li {
 
 .img4_red {
   grid-area: masterpiece_img4_link;
-  position: relative;
-  top: -23.5%;
 }
 
 .img5_red {
   grid-area: masterpiece_img5_link;
-  position: relative;
-  top: -2.7%;
 }
 
 .img6_red {
   grid-area: masterpiece_img6_link;
-  position: relative;
-  top: -17.3%;
 }
 
 .img7_red {
   grid-area: masterpiece_img7_link;
-  position: relative;
-  top: -34%;
-}
-
-.after {
-  z-index: -1;
 }
 
 .before:hover {
   opacity: 0;
+}
+
+/* section4 */
+.BLOGINSTAGRAM {
+  display: flex;
+  gap: 40px;
+  padding-top: 40px;
+  width: 1360px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.blog_store {
+  border-bottom: 0px solid #1e1b19;
+  border-left: 0px solid #1e1b19;
+  border-right: 1px solid #1e1b19;
+  border-top: 0px solid #1e1b19;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0px 40px 0px 0px;
+}
+
+#blog {
+  border-bottom: 1px solid #1e1b19;
+  justify-content: flex-start;
+  padding: 0px 0px 40px 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.blog_title {
+  color: #1e1b19;
+  display: flex;
+  font-family: "Zen Antique", serif;
+  font-size: 55px;
+  font-weight: 500;
+  height: auto;
+  line-height: 1;
+  margin: 0px 0px 16px 0px;
+  text-align: left;
+  transition-duration: 0ms;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+#online-store {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 40px 0px 0px 0px;
+}
+
+.online_store_title {
+  font-size: 100px;
+  font-family: "Zen Antique", serif;
+  margin: 0;
+}
+
+#stockist {
+  border-bottom: 1px solid #1e1b19;
+  border-left: 1px solid #1e1b19;
+  border-right: 1px solid #1e1b19;
+  border-top: 1px solid #1e1b19;
+  padding: 0px 0px 40px 0px;
+}
+
+#contact {
+  border-bottom: 1px solid #1e1b19;
+  border-left: 1px solid #1e1b19;
+  border-right: 01px solid #1e1b19;
+  border-top: 01px solid #1e1b19;
+  padding: 40px 0px 0px 0px;
 }
 
 
