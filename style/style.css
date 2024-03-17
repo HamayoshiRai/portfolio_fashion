@@ -77,14 +77,14 @@ li {
   color: #1e1b19;
   font-weight: bold;
   font-size: 14px;
-  height: auto;
   letter-spacing: 0.05em;
   line-height: 1;
   margin: 0;
   text-align: center;
-  width: auto;
   max-width: 100%;
   justify-content: center;
+  font-family: "Zen Antique", serif;
+  font-weight: 100;
 }
 
 .asterisk_STORE {
@@ -234,7 +234,6 @@ li {
 
 .second_text {
   color: #1e1b19;
-  flex: none;
   font-family: "Zen Antique", serif;
   font-feature-settings: 'palt' 1;
   font-size: 14px;
@@ -244,10 +243,6 @@ li {
   line-height: 2;
   margin: 0px 0px 24px 0px;
   text-align: right;
-  transition-duration: 0ms;
-  width: 100%;
-  max-width: 100%;
-  justify-content: flex-end;
 }
 
 .content_text {
@@ -336,7 +331,7 @@ li {
   justify-content: center;
 }
 
-.store_content {
+/* .about_content {
   display: flex;
   align-items: center;
   flex: none;
@@ -346,13 +341,7 @@ li {
   padding: 0;
   width: 100%;
   max-width: 100%;
-}
-
-.store_img {
-  flex: none;
-  width: 90%;
-  max-width: 90%;
-}
+} */
 
 .collection_top {
   flex: 11;
@@ -560,7 +549,7 @@ li {
 .BLOGINSTAGRAM {
   display: flex;
   gap: 40px;
-  padding-top: 40px;
+  padding: 40px 0 40px 0;
   width: 1360px;
   max-width: 100%;
   margin: 0 auto;
@@ -589,8 +578,8 @@ li {
   color: #1e1b19;
   display: flex;
   font-family: "Zen Antique", serif;
-  font-size: 55px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 400;
   height: auto;
   line-height: 1;
   margin: 0px 0px 16px 0px;
@@ -599,35 +588,6 @@ li {
   width: auto;
   max-width: 100%;
   justify-content: flex-start;
-}
-
-#online-store {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  padding: 40px 0px 0px 0px;
-}
-
-.online_store_title {
-  font-size: 100px;
-  font-family: "Zen Antique", serif;
-  margin: 0;
-}
-
-#stockist {
-  border-bottom: 1px solid #1e1b19;
-  border-left: 1px solid #1e1b19;
-  border-right: 1px solid #1e1b19;
-  border-top: 1px solid #1e1b19;
-  padding: 0px 0px 40px 0px;
-}
-
-#contact {
-  border-bottom: 1px solid #1e1b19;
-  border-left: 1px solid #1e1b19;
-  border-right: 01px solid #1e1b19;
-  border-top: 01px solid #1e1b19;
-  padding: 40px 0px 0px 0px;
 }
 
 .blog_text {
@@ -657,21 +617,20 @@ li {
 }
 
 .blog_img {
+  flex-direction: column;
   border-left: 1px solid #1e1b19;
   height: 120px;
   justify-content: center;
-  /* padding: 0px 15px; */
   width: 33%;
   max-width: 33%;
 }
 
-#blog a p {
-  color: #1e1b19;
-  font-size: 32px;
-  font-family: "Zen Antique", serif;
+.blog_rightline {
+  border-right: 1px solid #1e1b19;
 }
 
 .blog_box {
+  text-align: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -684,8 +643,14 @@ li {
   font-size: 50px;
 }
 
-.blog_black:hover {
+.blog_box:hover .blog_black {
   opacity: 0;
+}
+
+.blog_box_text {
+  font-size: 32px;
+  font-family: "Zen Antique", serif;
+  color: #1e1b19;
 }
 
 .blog_color {
@@ -697,6 +662,225 @@ li {
   left: 0;
   z-index: -1;
 }
+
+/* section5 */
+#online-store {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 40px 0px 0px 0px;
+}
+
+#online-store p {
+  color: #1e1b19;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0px 0px 32px 0px;
+  text-align: left;
+  width: 530px;
+  max-width: 100%;
+}
+
+.online_store_title {
+  font-size: 80px;
+  font-family: "Zen Antique", serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+/* stockist */
+#stockist {
+  border-bottom: 1px solid #1e1b19;
+  border-right: 1px solid #1e1b19;
+  padding: 0px 0px 40px 0px;
+}
+
+.stockist_title {
+  font-size: 64px;
+  font-family: "Zen Antique", serif;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+
+.stockist_text {
+  color: #1e1b19;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.stockist_img , .contact_img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* contact */
+#contact {
+  padding: 40px 0 0 0;
+}
+
+.contact_title {
+  font-size: 64px;
+  font-family: "Zen Antique", serif;
+  font-weight: 100;
+  color: #ededed;
+}
+
+.contact_box {
+  position: relative;
+}
+
+.contact_text {
+  color: #ededed;
+  font-family: "Zen Antique", serif;
+  font-feature-settings: 'palt' 1;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0px 32px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact_img {
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+.contact_page {
+  align-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  z-index: 3;
+  text-align: center;
+}
+
+.contact_box:hover , .store_img:hover {
+  opacity: .7;
+}
+
+/* footer */
+.footer_content {
+  align-content: center;
+  align-items: center;
+  padding: 0px 40px 40px 40px;
+}
+
+.footer_waper {
+  border-bottom: 4px solid #1e1b19;
+  border-top: 1px solid #1e1b19;
+  padding: 2px 0px;
+}
+
+.footer_box {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #1e1b19;
+  border-top: 1px solid #1e1b19;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 40px 0px 24px 0px;
+}
+
+.footer_flex {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer_link {
+  text-decoration: none;
+}
+
+.footer_nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 24px 0px;
+  margin-top: 3px;
+  position: relative;
+}
+
+.asterisk_footer1 {
+  background: #1e1b19;
+  border-radius: 2px;
+  flex: none;
+  height: 4px;
+  margin: 0;
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  width: 4px;
+  max-width: 100%;
+}
+
+.asterisk_footer2 {
+  background: #1e1b19;
+  border-radius: 2px;
+  flex: none;
+  height: 4px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 4px;
+  max-width: 100%;
+}
+
+.footer_logo {
+  flex: none;
+  height: auto;
+  margin: 40px 0px 24px 0px;
+  width: 188px;
+  max-width: 100%;
+}
+
+.footer_text {
+  color: #1e1b19;
+  font-family: "Zen Antique", serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+}
+
+/* hover */
+.blog_box:hover .blog_box_text , .nav_link:hover ,
+.en:hover {
+  color: #b22222;
+}
+
+.nav_link_asterisk:hover .asterisk {
+  opacity: 0;
+}
+
+
 
 
 /* 以下 */
