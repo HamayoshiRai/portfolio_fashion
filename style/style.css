@@ -25,6 +25,7 @@ body{
   border-top: 4px solid #1e1b19;
   padding: 2px 0px 0px 0px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .title_logo {
@@ -168,6 +169,7 @@ li {
   width: 1360px;
   max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .content_box {
@@ -202,7 +204,6 @@ li {
 
 .first_text {
   color: #1e1b19;
-  flex: none;
   font-family: "Zen Antique", serif;
   font-feature-settings: 'palt' 1;
   font-size: 14px;
@@ -572,6 +573,10 @@ li {
   max-width: 100%;
 }
 
+.bloginsta_waper {
+  display: flex;
+}
+
 .blog_title {
   color: #1e1b19;
   display: flex;
@@ -691,6 +696,10 @@ li {
 }
 
 /* stockist */
+.stockist_contact_content {
+  margin-left: 3%;
+}
+
 #stockist {
   border-bottom: 1px solid #1e1b19;
   padding: 0px 0px 40px 0px;
@@ -851,12 +860,113 @@ a:hover {
   color: #b22222;
 }
 
+/* sp */
+.sp_nav {
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
 /* 以上 */
 @media screen and (min-width: 882px) {
-  
+  .sp_nav , .sp_first_text , .sp_masterpiece , .sp_blog , #sp_stockist ,
+  .tablet_footer , .sp_footer {
+    display: none;
+  }
 }
 
 /* 以下 */
 @media screen and (max-width: 881px) {
-  
+  .first_text , .second_text , .pc_nav , .masterpiece_box ,
+  .bloginsta_waper , .sp_footer {
+    display: none;
+  }
+
+  .sp_nav {
+    display: flex;
+    margin: 0;
+  }
+
+  .sp_nav_column {
+    display: flex;
+    border-bottom: 1px solid #1e1b19;
+    align-content: center;
+    align-items: center;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .sp_first_text {
+    color: #1e1b19;
+    font-family: "Zen Antique", serif;
+    font-feature-settings: 'palt' 1;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0.08em;
+    line-height: 2;
+    text-align: left;
+    transition-duration: 0ms;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sp_nav_link {
+    align-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 18px 0px;
+    max-width: 100%;
+    text-decoration: none;
+  }
+
+  .sp_nav_link p {
+    color: #1e1b19;
+    font-family: "Zen Antique", serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    transition-timing-function: ease;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .main_top {
+    flex-direction: column;
+  }
+
+  .masterpiece_catchcopy {
+    display: block;
+  }
+
+  .footer_box {
+    display: block;
+    
+  }
+
+  .footer_logo {
+    margin-top: 30px;
+  }
+
+  .footer_ligobox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 以下 */
+@media screen and (max-width: 540px) {
+
 }
