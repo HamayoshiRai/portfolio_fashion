@@ -881,7 +881,16 @@ a:hover {
 /* 以下 */
 @media screen and (max-width: 881px) {
   .first_text , .second_text , .pc_nav , .masterpiece_box ,
-  .bloginsta_waper , .sp_footer {
+  .bloginsta_waper , .pc_footer , .sp_footer {
+    display: none;
+  }
+
+  .title_logo {
+    gap: 12px;
+    padding: 20px 0px 24px 0px;
+  }
+
+  .sb_title {
     display: none;
   }
 
@@ -951,9 +960,158 @@ a:hover {
     display: block;
   }
 
+  .collection_left {
+    border-left: 0px solid #1e1b19;
+    padding: 0;
+  }
+
+  .masterpiece_text {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sp_masterpiece {
+    position: relative;
+  }
+
+  .sp_masterpiece_link1 {
+    position: absolute;
+    top: 0;
+  }
+
+  .sp_masterpiece_top {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .sp_blog_content {
+    border-bottom: 1px solid #1e1b19;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sp_blog_title , .sp_stockist_title ,
+  .sp_store_title , .sp_contact_title {
+    font-size: 64px;
+    font-family: "Zen Antique", serif;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  .bloginsta_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 0px;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bloginsta_box_left , .bloginsta_box_right {
+    background: rgba(0, 0, 0, 0.0);
+    border-left: 1px solid #1e1b19;
+    border-right: 1px solid #1e1b19;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 33%;
+    max-width: 33%;
+    text-decoration: none;
+  }
+
+  .bloginsta_box_center {
+    background: rgba(0, 0, 0, 0.0);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 33%;
+    max-width: 33%;
+    text-decoration: none;
+  }
+
+  .sp_Instagram_text {
+    font-family: "Zen Antique", serif;
+    font-size: 24px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .sp_Instagram_box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .sp_Instagram {
+    height: auto;
+    width: 29px;
+    max-width: 100%;
+  }
+
+  .blog_title_text , .sp_stockist_text ,
+  .sp_store_text , .sp_contact_text {
+    font-family: "Zen Antique", serif;
+    font-weight: 100;
+  }
+
+  .sp_stockist_content , .sp_store_content {
+    border-bottom: 1px solid #1e1b19;
+    height: auto;
+    padding: 40px 0px;
+    width: 100%;
+  }
+
+  .sp_stockist_img_box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .sp_stockist_img_box {
+    transition-delay: 800ms;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sp_contact_title , .sp_contact_text {
+    color: #fff;
+  }
+
   .footer_box {
     display: block;
-    
   }
 
   .footer_logo {
