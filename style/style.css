@@ -221,7 +221,6 @@ li {
 }
 
 .about_img {
-  width: 50%;
   margin: 0 auto;
 }
 
@@ -356,8 +355,6 @@ li {
   flex-wrap: nowrap;
   justify-content: flex-start;
   margin: 0px 0px 0px 0px;
-  overflow-x: hidden;
-  overflow-y: hidden;
   width: auto;
   max-width: 100%;
 }
@@ -368,6 +365,7 @@ li {
   padding: 0px;
   width: 220px;
   max-width: 100%;
+  flex: none;
 }
 
 .collection_top {
@@ -399,15 +397,22 @@ li {
   display: flex;
   gap: 8px;
   margin: 0px 0px 40px 0px;
-  padding: 0px;
   width: 100%;
   max-width: 100%;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  justify-content: flex-start;
+  margin: 0px 0px 40px 0px;
 }
 
 /* slideanimation */
 .img_animation {
   animation-name:bgextendAnimeBase;
-  animation-duration:3.5s;
+  animation-duration:1s;
   animation-fill-mode:forwards;
   position: relative;
   overflow: hidden;/*はみ出た色要素を隠す*/
@@ -415,17 +420,21 @@ li {
 }
 
 @keyframes bgextendAnimeBase{
-  from {
+  0% {
     opacity:0;
   }
 
-  to {
+  50% {
+    opacity:0;
+  }
+
+  100% {
     opacity:1;  
 }
 }
 
 /*--------- 左から --------*/
-.img_animation::before{
+.img_animation::before {
   animation-name:bgLRextendAnime;
   animation-duration:1.3s;
   animation-fill-mode:forwards;
@@ -436,6 +445,8 @@ li {
   background-color: #000;/*伸びる背景色の設定*/
   z-index: 999;
 }
+
+
 
 @keyframes bgLRextendAnime{
   0% {
@@ -453,6 +464,19 @@ li {
     transform-origin:right;
     transform:scaleX(0);
   }
+}
+
+.scroll {
+  opacity : 0;
+  transform : translate(-100px, 0);
+  transition : all 0.7s;
+  z-index: 999;
+  animation-name:bgLRextendAnime;
+}
+
+.scroll.active{
+  opacity : 1;
+  transform : translate(0, 0);
 }
 
 .fashion_img {
@@ -798,7 +822,7 @@ li {
 }
 
 /* contact */
-#contact {
+.contact_content {
   padding: 40px 0 0 0;
 }
 
@@ -931,18 +955,20 @@ a:hover {
 
 /* sp */
 .sp_nav {
+  border-top: 1px solid #1e1b19;
   align-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   padding: 0;
+  margin-top: 10px;
 }
 
 /* 以上 */
 @media screen and (min-width: 882px) {
-  .sp_nav , .sp_first_text , .sp_masterpiece , .sp_blog , #sp_stockist ,
-  .tablet_footer , .sp_footer {
+  .sp_nav , .sp_first_text , .sp_masterpiece , .sp_blog , .sp_stockist_content ,
+  .tablet_footer , .sp_footer , ._contact_content {
     display: none;
   }
 }
@@ -950,13 +976,18 @@ a:hover {
 /* 以下 */
 @media screen and (max-width: 881px) {
   .first_text , .second_text , .pc_nav , .masterpiece_box ,
-  .bloginsta_waper , .pc_footer , .sp_footer , .stockist_contact_content , .blog_store {
+  .bloginsta_waper , .pc_footer , .sp_footer , 
+  .stockist_contact_content , .blog_store , ._contact_content{
     display: none;
   }
 
   .title_logo {
     gap: 12px;
     padding: 20px 0px 24px 0px;
+  }
+
+  .title {
+    margin-bottom: 3px;
   }
 
   .sb_title {
@@ -966,6 +997,15 @@ a:hover {
   .sp_nav {
     display: flex;
     margin: 0;
+  }
+
+  .header_content {
+    max-width: 108%;
+  }
+
+  .bg_design {
+    width: 108%;
+    max-width: 108%;
   }
 
   .sp_nav_column {
@@ -1019,6 +1059,29 @@ a:hover {
     transition-timing-function: ease;
     max-width: 100%;
     justify-content: center;
+    padding: 0;
+  }
+
+  .asterisk_box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .sp_asterisk {
+    position: relative;
+    top: -5px;
+    right: 135px;
+    background: #1e1b19;
+    border-radius: 2px;
+    height: 4px;
+    margin: 0;
+    width: 4px;
+    max-width: 100%;
   }
 
   .main_top {
@@ -1027,6 +1090,10 @@ a:hover {
 
   .top_about {
     font-size: 10vw;
+  }
+
+  .about_img {
+    width: 60vw;
   }
 
   .masterpiece_catchcopy {
@@ -1171,6 +1238,11 @@ a:hover {
     display: block;
   }
 
+  .collection_column {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
   .sp_blog_content {
     border-bottom: 1px solid #1e1b19;
     padding: 0px 0px 40px 0px;
@@ -1308,5 +1380,113 @@ a:hover {
 
 /* 以下 */
 @media screen and (max-width: 540px) {
+  
+  .content_box {
+    max-width: 90%;
+  }
 
+  .sp_contact_box {
+    display: none;
+  }
+
+  ._contact_content {
+    display: block;
+    padding: 0;
+  }
+
+  ._contact_page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    z-index: 3;
+    text-align: center;
+  }
+
+  ._contact_title{
+    font-size: 10vw;
+    font-family: "Zen Antique", serif;
+    font-weight: 100;
+    color: #fff;
+  }
+
+  ._contact_text{
+    font-size: 3vw;
+    font-family: "Zen Antique", serif;
+    font-weight: 100;
+    color: #fff;
+    }
+
+  .bloginsta_box {
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 0px;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .odd {
+    width: 49%;
+    max-width: 50%;
+    border-right: 0px solid #1e1b19;
+    border-left: 1px solid #1e1b19;
+  }
+
+  .groups {
+    width: 49%;
+    max-width: 50%;
+    border-right: 1px solid #1e1b19;
+    border-left: 1px solid #1e1b19;
+  }
+
+  .sp_nav {
+    display: none;
+  }
+
+  .footer_waper {
+    max-width: 90%;
+  }
+
+  .sp_footer {
+    border-bottom: 1px solid #1e1b19;
+    border-left: 0px solid #1e1b19;
+    border-right: 0px solid #1e1b19;
+    border-top: 0px solid #1e1b19;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 3.5vw;
+    gap: 12px 18px;
+    padding: 12px 0px;
+    justify-content: center;
+  }
+
+  .sp_footer_centerline {
+    height: 1px;
+    width: 100%;
+    max-width: 100%;
+    background: #1e1b19;
+  }
+
+  .sp_asterisk {
+    right: 10px;
+  }
+
+  .textlink {
+    margin: 0;
+    text-decoration:none;
+    color: #1e1b19;
+  }
+
+  .asterisk_box {
+    text-decoration:none;
+  }
 }

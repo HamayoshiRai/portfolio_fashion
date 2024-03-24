@@ -12,6 +12,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&family=Noto+Sans+KR:wght@300&family=Noto+Sans+SC:wght@300;400&family=Noto+Serif+JP:wght@500;700&family=PT+Sans&family=Zen+Antique&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Slick Carousel CDNを追加 -->
+  <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -40,14 +43,14 @@
           <li><a href="#" class="nav_link" style="text-decoration:none;">STOCKIST</a></li>
           <li class="Separator"></li>
           <li class="nav_link_asterisk">
-            <a href="#" style="text-decoration:none;">
+            <a href="#" class="asterisk_box" style="text-decoration:none;">
               <p class="nav_link">ONE STORE</p>
               <span class="asterisk_STORE asterisk"></span>
             </a>
           </li>
           <li class="Separator"></li>
           <li class="nav_link_asterisk">
-            <a href="#" style="text-decoration:none;">
+            <a href="#" class="asterisk_box" style="text-decoration:none;">
               <p class="nav_link">CONTACT</p>
               <span class="asterisk_CONTACT asterisk"></span>
             </a>
@@ -86,21 +89,40 @@
           </li>
           <li class="sp_nav_column">
             <a href="#" class="sp_nav_link">
-              <div class="sd appear">
-                <p class="text sd appear">ONLINE STORE</p>
-                <div class="asterisk"></div>
+              <div class="asterisk_box">
+                <p class="sp_nav_link">ONE STORE</p>
+                <span class="sp_asterisk"></span>
               </div>
             </a>
             <div class="Separator"></div>
             <a href="#" class="sp_nav_link">
-              <div class="sd appear">
-                <p class="text sd appear">CONTACT</p>
-                <div class="asterisk"></div>
+              <div class="asterisk_box">
+                <p class="sp_nav_link">CONTACT</p>
+                <span class="sp_asterisk"></span>
               </div>
             </a>
           </li>
         </ul>
       </nav>
+      <div class="sp_footer">
+        <a href="#" class="textlink">ABOUT</a>
+        <div class="Separator"></div>
+        <a href="#" class="textlink">COLLECTION</a>
+        <div class="Separator"></div>
+        <a href="#" class="textlink">MASTERPIECE</a>
+        <div class="sp_footer_centerline"></div>
+        <a href="#" class="textlink">STOCKIST</a>
+        <div class="Separator"></div>
+        <a href="#" class="asterisk_box">
+          <p class="textlink">ONE STORE</p>
+          <div class="sp_asterisk"></div>
+        </a>
+        <div class="Separator"></div>
+        <a href="#" class="asterisk_box">
+          <p class="textlink">CONTACT</p>
+          <div class="sp_asterisk"></div>
+        </a>
+      </div>
       <img class="bg_design" alt="" src="./img/bg_design.jpg">
     </header>
 
@@ -207,7 +229,42 @@
                             <a target="_blank" href="">TRIM FIT III PANTS</a></p>
                         </div>
                       </li>
+                      <li class="collection_li">
+                        <div class="img_animation">
+                          <div class="sd">
+                            <div class="sd"></div>
+                          </div>
+                          <img class="fashion_img" alt="" src="./img/fashion4.jpg">
+                        </div>
+                        <div class="detail_text">
+                          <p class="">
+                            <a target="_blank" href="">MC GLASSES</a>&nbsp;/
+                            <a target="_blank" href="">KFV GOB PARKA</a> /
+                            <a target="_blank" href="">KFV V NECK PULLOVER</a> /
+                            <a target="_blank" href="">BD SHIRT</a> /
+                            <a target="_blank" href="">HAND FRINGED TIE</a> /
+                            <a target="_blank" href="">TRIM FIT III PANTS</a></p>
+                        </div>
+                      </li>
+                      <li class="collection_li">
+                        <div class="img_animation">
+                          <div class="sd">
+                            <div class="sd"></div>
+                          </div>
+                          <img class="fashion_img" alt="" src="./img/fashion4.jpg">
+                        </div>
+                        <div class="detail_text">
+                          <p class="">
+                            <a target="_blank" href="">MC GLASSES</a>&nbsp;/
+                            <a target="_blank" href="">KFV GOB PARKA</a> /
+                            <a target="_blank" href="">KFV V NECK PULLOVER</a> /
+                            <a target="_blank" href="">BD SHIRT</a> /
+                            <a target="_blank" href="">HAND FRINGED TIE</a> /
+                            <a target="_blank" href="">TRIM FIT III PANTS</a></p>
+                        </div>
+                      </li>
                     </ul>
+
                     <ul class="collection_column">
                       <li class="collection_li">
                         <div class="img_animation">
@@ -246,6 +303,36 @@
                             <div class="sd appear"></div>
                           </div>
                           <img class="fashion_img" alt="" src="./img/fashion7.jpg">
+                        </div>
+                        <div class="detail_text">
+                          <p class="">
+                            <a target="_blank" href="#">CHRISTY VEST</a> /
+                            <a target="_blank" href="#">KFV V NECK PULLOVER</a> /
+                            <a target="_blank" href="#">1918 A BREECHES</a>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="collection_li">
+                        <div class="img_animation">
+                          <div class="sd appear">
+                            <div class="sd appear"></div>
+                          </div>
+                          <img class="fashion_img" alt="" src="./img/fashion8.jpg">
+                        </div>
+                        <div class="detail_text">
+                          <p class="">
+                            <a target="_blank" href="#">CHRISTY VEST</a> /
+                            <a target="_blank" href="#">KFV V NECK PULLOVER</a> /
+                            <a target="_blank" href="#">1918 A BREECHES</a>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="collection_li">
+                        <div class="img_animation">
+                          <div class="sd appear">
+                            <div class="sd appear"></div>
+                          </div>
+                          <img class="fashion_img" alt="" src="./img/fashion8.jpg">
                         </div>
                         <div class="detail_text">
                           <p class="">
@@ -429,11 +516,11 @@
                 <p class="">
                   FakeMagicの公式オンラインショップでは、
                   メンズ・レディース共に定番アイテムからシーズン限定アイテムまで幅広く、アイテム数豊富に取り扱っております。</p>
-                  <a href="#" rel="noopener" target="_blank" class="img_animation">
+                  <a href="#" rel="noopener" target="_blank" class="">
                   <div class="sd appear">
                     <div class="sd appear"></div>
                   </div>
-                  <img class="store_img" alt="STOREを見る" src="./img/store.jpg">
+                  <img class="store_img scroll" alt="STOREを見る" src="./img/store.jpg">
                 </a>
               </section>
             </div>
@@ -452,19 +539,19 @@
                     <p class="view_text">VIEW MORE</p>
                   </a>
                 </div>
-                <div class="stockist_box img_animation">
+                <div class="stockist_box scroll">
                   <div class="sd">
                     <div class="kara"></div>
                   </div>
                   <img class="stockist_img" alt="" src="./img/stockist.png">
                 </div>
               </div>
-              <div id="contact" class="sd appear">
-                <a href="#" rel="noopener" target="_blank" class="sd appear" style="text-decoration: none;">
+              <div id="contact" class="contact_content">
+                <a href="#" target="_blank" class="sd appear" style="text-decoration: none;">
                   <div class="sd">
                     <div class="sd"></div>
                   </div>
-                  <div class="contact_box img_animation">
+                  <div class="contact_box scroll">
                     <div class="contact_page">
                       <h2 class="contact_title">CONTACT</h2>
                       <p class="contact_text">
@@ -484,35 +571,35 @@
                 ブランドの最新情報、直営店の取扱商品やスタッフのスタイリング等の情報は、オフィシャルブログや各店舗のインスタグラムをご確認ください。
               </p>
               <div class="bloginsta_box">
-                <a href="#" class="bloginsta_box_left">
+                <a href="#" class="bloginsta_box_left odd">
                   <p class="sp_Instagram_text">
                     OFFICIAL<br>BLOG</p>
                 </a>
-                <a href="#" class="bloginsta_box_center">
+                <a href="#" class="bloginsta_box_center groups">
                   <div class="sp_Instagram_box">
                     <p class="sp_Instagram_text">TOKYO</p>
                     <img class="sp_Instagram" alt="Instagram" src="./img/insta_black.png">
                   </div>
                 </a>
-                <a href="#" class="bloginsta_box_right">
+                <a href="#" class="bloginsta_box_right odd">
                   <div class="sp_Instagram_box">
                     <p class="sp_Instagram_text">AOYAMA</p>
                     <img class="sp_Instagram" alt="Instagram" src="./img/insta_black.png">
                   </div>
                 </a>
-                <a href="#" class="bloginsta_box_left">
+                <a href="#" class="bloginsta_box_left groups">
                   <div class="sp_Instagram_box">
                     <p class="sp_Instagram_text">SAPPORO</p>
                     <img class="sp_Instagram" alt="Instagram" src="./img/insta_black.png">
                   </div>
                 </a>
-                <a href="#" class="bloginsta_box_center">
+                <a href="#" class="bloginsta_box_center odd">
                   <div class="sp_Instagram_box">
                     <p class="sp_Instagram_text">NAGOYA</p>
                     <img class="sp_Instagram" alt="Instagram" src="./img/insta_black.png">
                   </div>
                 </a>
-                <a href="#" class="bloginsta_box_right">
+                <a href="#" class="bloginsta_box_right groups">
                   <div class="sp_Instagram_box">
                     <p class="sp_Instagram_text">PARIS</p>
                     <img class="sp_Instagram" alt="Instagram" src="./img/insta_black.png">
@@ -539,12 +626,13 @@
                 <div class="sd appear">
                   <div class="sd appear"></div>
                 </div>
-                <img class="sp_stockist_img" alt="" src="./img/sp_stockist.png">
+                <div class="slide_effect"></div> <!-- 追加：黒色のスライドエフェクト -->
+                <img class="sp_stockist_img scroll" alt="" src="./img/sp_stockist.png">
               </div>
             </section>
 
             <section id="sp_store" class="sp_store_content">
-              <h2 class="sp_store_title">ONLINE STORE</h2>
+              <h2 class="sp_store_title">ONE STORE</h2>
               <p class="sp_store_text">
                 FakeMagicの公式オンラインショップでは、
                 メンズ・レディース共に定番アイテムからシーズン限定アイテムまで幅広く、アイテム数豊富に取り扱っております。
@@ -553,11 +641,11 @@
                 <div class="sd appear">
                   <div class="sd appear"></div>
                 </div>
-                <img class="sp_store_img" alt="" src="./img/store.jpg">
+                <img class="sp_store_img scroll" alt="" src="./img/store.jpg">
               </a>
             </section>
 
-            <div id="contact-sp" class="sp_contact_content">
+            <div id="contact-sp" class="sp_contact_content scroll">
               <a href="#" class="sp_contact_link" style="text-decoration: none;">
                 <div class="sd appear">
                   <div class="sd appear"></div>
@@ -570,6 +658,23 @@
                     </p>
                   </div>
                   <img class="sp_contact_img" alt="" src="./img/sp_contactimg.png">
+                </div>
+              </a>
+            </div>
+            <div id="contact" class="_contact_content">
+              <a href="#" target="_blank" class="sd appear" style="text-decoration: none;">
+                <div class="sd">
+                  <div class="sd"></div>
+                </div>
+                <div class="contact_box scroll">
+                  <div class="_contact_page">
+                    <h2 class="_contact_title">CONTACT</h2>
+                    <p class="_contact_text">
+                      FakeMagicへのお問い合わせにつきましては、<br>
+                      CONTACTページよりお願いします。
+                    </p>
+                  </div>
+                  <img class="contact_img" alt="" src="./img/contactimg.png">
                 </div>
               </a>
             </div>
@@ -593,14 +698,14 @@
             <li><a href="#" class="nav_link" style="text-decoration:none;">STOCKIST</a></li>
             <li class="Separator"></li>
             <li class="nav_link_asterisk">
-              <a href="#" style="text-decoration:none;">
+              <a href="#" class="asterisk_box" style="text-decoration:none;">
                 <p class="nav_link">ONE STORE</p>
                 <span class="asterisk_footer1 asterisk"></span>
               </a>
             </li>
             <li class="Separator"></li>
             <li class="nav_link_asterisk">
-              <a href="#" style="text-decoration:none;">
+              <a href="#" class="asterisk_box" style="text-decoration:none;">
                 <p class="nav_link">CONTACT</p>
                 <span class="asterisk_footer2 asterisk"></span>
               </a>
@@ -631,15 +736,15 @@
             </li>
             <li class="sp_nav_column">
               <a href="#" class="sp_nav_link">
-                <div class="sd appear">
-                  <p class="text sd appear">ONLINE STORE</p>
+                <div class="asterisk_box">
+                  <p class="sp_nav_link">ONE STORE</p>
                   <div class="asterisk"></div>
                 </div>
               </a>
               <div class="Separator"></div>
               <a href="#" class="sp_nav_link">
-                <div class="sd appear">
-                  <p class="text sd appear">CONTACT</p>
+                <div class="asterisk_box">
+                  <p class="sp_nav_link">CONTACT</p>
                   <div class="asterisk"></div>
                 </div>
               </a>
@@ -647,22 +752,22 @@
           </ul>
         </nav>
         <div class="sp_footer">
-          <a href="#" class="text link sd appear">ABOUT</a>
-          <div class="sd appear"></div>
+          <a href="#" class="textlink">ABOUT</a>
+          <div class="Separator"></div>
           <a href="#" class="textlink">COLLECTION</a>
-          <div class="sd appear"></div>
-          <a href="#" class="textlin">MASTERPIECE</a>
-          <div class="sd appear"></div>
-          <a href="#" class="">STOCKIST</a>
-          <div class="sd appear"></div>
-          <a href="#" class="sd appear">
-            <p class="text sd appear">ONLINE STORE</p>
-            <div class="sd appear"></div>
+          <div class="Separator"></div>
+          <a href="#" class="textlink">MASTERPIECE</a>
+          <div class="sp_footer_centerline"></div>
+          <a href="#" class="textlink">STOCKIST</a>
+          <div class="Separator"></div>
+          <a href="#" class="asterisk_box">
+            <p class="textlink">ONE STORE</p>
+            <div class="sp_asterisk"></div>
           </a>
-          <div class="sd appear"></div>
-          <a href="#" class="sd appear">
-            <p class="text sd appear">CONTACT</p>
-            <div class="sd appear"></div>
+          <div class="Separator"></div>
+          <a href="#" class="asterisk_box">
+            <p class="textlink">CONTACT</p>
+            <div class="sp_asterisk"></div>
           </a>
         </div>
         <div class="footer_ligobox">
