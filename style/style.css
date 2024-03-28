@@ -410,16 +410,24 @@ li {
 }
 
 /* slideanimation */
-  .scroll.active.img_animation {
-    animation-name:bgextendAnimeBase;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    position: relative;
-    overflow: hidden;
+
+  .fashion_img {
     opacity: 0;
   }
 
-  .fashion_img {
+  .img_animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scroll.active.img_animation {
+    animation-name: bgextendAnimeBase;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  .scroll.active.fashion_img {
     animation-name: fadeOut;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -485,8 +493,6 @@ li {
 }
 
 .fashion_img {
-  transition-delay: 800ms;
-  transition-duration: 0ms;
   width: 100%;
 }
 
